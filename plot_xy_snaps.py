@@ -3,7 +3,7 @@
 ########################################
 import os
 import sys
-sys.path.append('/home/dauhajre/ROMS_PLOTTING_SHARE/ROMS_PY/')
+sys.path.append('/home/dauhajre/ROMS_PLOT/ROMS_PY/')
 from netCDF4 import Dataset as netcdf
 import numpy as np
 import ROMS_depths as RD
@@ -23,7 +23,7 @@ RTP.set_rcs()
 axis_font,tick_size,cbar_tick_size = RTP.set_fonts(axis=22,cbar_tick=14)
 
 
-path_code = '/home/dauhajre/ROMS_PLOTTING_SHARE/'
+path_code = '/home/dauhajre/ROMS_PLOT/'
 
 ##########################
 #Solution and figure name / files to plot
@@ -63,9 +63,13 @@ n2 = 9 #last file
 #####################################
 #Hardcoded locations of kelp (a box)
 #####################################
+#Center xi axis point
 ic_farm=10
+#Center eta axis point
 jc_farm=16
+#Length of farm in xi (x)
 ni_farm=10
+#Length of farm in eta (y)
 nj_farm=6
 
 #################################################
